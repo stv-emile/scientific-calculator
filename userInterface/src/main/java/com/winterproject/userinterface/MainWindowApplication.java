@@ -18,7 +18,7 @@ public class MainWindowApplication extends Application {
         stage.setScene(scene);
         stage.initStyle(StageStyle.TRANSPARENT);
         stage.setResizable(false);
-        stage.setTitle("Calculator");
+        stage.setTitle("SciCalculator");
         stage.getIcons().add(new Image(getClass().getResourceAsStream("/com/winterproject/userinterface/images/icon.png")));
         ((MainWindowController)loader.getController()).init(stage);
         stage.show();
