@@ -1,5 +1,7 @@
 package com.winterproject.userinterface;
 
+import math.parser.MathExpression;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
@@ -12,9 +14,9 @@ public class MainWindowController {
     @FXML private ImageView btnMinimize, btnClose;
     @FXML private Label lblResult;
 
+    private  String mathExpressionString = "";
+
     private double x, y;
-    private double num1 = 0;
-    private String operator = "+";
 
     public void init(Stage stage) {
         titlePane.setOnMousePressed(mouseEvent -> {
@@ -32,36 +34,33 @@ public class MainWindowController {
 
     @FXML
     void onNumberClicked(MouseEvent event) {
-        int value = Integer.parseInt(((Pane)event.getSource()).getId().replace("btn",""));
-        lblResult.setText(Double.parseDouble(lblResult.getText())==0?String.valueOf((double)value):String.valueOf(Double.parseDouble(lblResult.getText())*10+value));
+        String number = ((Pane)event.getSource()).getId().replace("btn","");
+        this.mathExpressionString += number;
     }
 
     @FXML
     void onSymbolClicked(MouseEvent event) {
         String symbol = ((Pane)event.getSource()).getId().replace("btn","");
         if(symbol.equals("Equals")) {
-            double num2 = Double.parseDouble(lblResult.getText());
-            switch (operator) {
-                case "+" -> lblResult.setText((num1+num2) + "");
-                case "-" -> lblResult.setText((num1-num2) + "");
-                case "*" -> lblResult.setText((num1*num2) + "");
-                case "/" -> lblResult.setText((num1/num2) + "");
-            }
-            operator = ".";
+            MathExpression mathExpression = new MathExpression(this.mathExpressionString);
+            double result = mathExpression.getResult();
+            lblResult.setText(String.valueOf(result));
         }
         else if(symbol.equals("Clear")) {
             lblResult.setText(String.valueOf(0.0));
-            operator = ".";
+        }
+        else if(symbol.equals(".")){
+            this.mathExpressionString += symbol;
         }
         else {
             switch (symbol) {
-                case "Plus" -> operator = "+";
-                case "Minus" -> operator = "-";
-                case "Multiply" -> operator = "*";
-                case "Divide" -> operator = "/";
+                case "Plus" -> this.mathExpressionString += "+";
+                case "Minus" -> this.mathExpressionString += "-";
+                case "Multiply" -> this.mathExpressionString += "*";
+                case "Divide" -> this.mathExpressionString += "/";
+                case "Pow" -> this.mathExpressionString +="^";
             }
-            num1 = Double.parseDouble(lblResult.getText());
-            lblResult.setText(String.valueOf(0.0));
+            //blink the pointer
         }
     }
 }
