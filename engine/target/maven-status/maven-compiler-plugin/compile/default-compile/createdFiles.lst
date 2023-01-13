@@ -1,0 +1,8 @@
+com\winter\engine\math\parser\MathExpression.class
+module-info.class
+com\winter\engine\adt\tree\BinaryTree.class
+com\winter\engine\App.class
+com\winter\engine\math\parser\ExpressionParser.class
+com\winter\engine\adt\tree\Node.class
+com\winter\engine\math\parser\ExpressionChecker.class
+com\winter\engine\compute\engine\ExpressionEvaluator.class

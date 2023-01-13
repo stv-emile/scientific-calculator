@@ -1,4 +1,4 @@
-package adt.tree;
+package com.winter.engine.adt.tree;
 
 public class BinaryTree<T> {
     Node<T> root;
