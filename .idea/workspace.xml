@@ -8,9 +8,16 @@
       <change afterPath="$PROJECT_DIR$/engine/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/engine/src/main/java/com/winterproject/App.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/engine/src/test/java/com/winterproject/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/src/main/java/com/winter/engine/math/parser/ExpressionParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/com/winter/engine/math/parser/ExpressionParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/src/main/java/com/winter/engine/math/parser/MathExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/com/winter/engine/math/parser/MathExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/target/classes/com/winter/engine/math/parser/ExpressionParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine/target/classes/com/winter/engine/math/parser/ExpressionParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/target/classes/com/winter/engine/math/parser/MathExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine/target/classes/com/winter/engine/math/parser/MathExpression.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userInterface/src/main/java/com/winter/userinterface/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userInterface/src/main/java/com/winter/userinterface/MainWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userInterface/src/main/java/com/winterproject/userinterface/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userInterface/src/main/java/com/winterproject/userinterface/MainWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userInterface/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/userInterface/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userInterface/src/main/resources/com/winter/userinterface/MainWindowInterface.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/userInterface/src/main/resources/com/winter/userinterface/MainWindowInterface.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,31 +44,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "C:/Users/steev/AppData/Local/SceneBuilder/SceneBuilder.exe",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.4586207",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/steev/AppData/Local/SceneBuilder/SceneBuilder.exe&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4586207&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="CalculatorEngine" />
@@ -72,21 +79,6 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="ExpressionParser" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="sciCalculator" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="sciCalculator" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

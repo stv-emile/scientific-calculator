@@ -36,20 +36,22 @@ public class MathExpression {
     }
     private void tokenize(){
         //code to tokenize the expression
-        String regex = "(\\d+(?:\\.\\d+)?)|[+\\-*/()]";
+        System.out.println("\nTokenizing...");
+        String regex = "(\\d+(?:\\.\\d+)?)|[+\\-*/()^]";
         //String adRegex = "(\\-?\\d+(?:\\.\\d+)?|[\\+\\-\\*\\/\\(\\)])";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(this.plainTextExpression);
         while (matcher.find()) {
             this.tokenizedExpressionList.add(matcher.group());
         }
+        System.out.println("Removing unnecessaryBrackets...");
         if(this.tokenizedExpressionList.size() > 1){
             this.tokenizedExpressionList=this.removeUnnecessaryBrackets(this.getTokenizedExpressionList());
             this.tokenizedExpressionList.addFirst("(");
             this.tokenizedExpressionList.addLast(")");
         }
 
-        System.out.println(this.tokenizedExpressionList);
+        System.out.println("Tokenized with success -> "+this.tokenizedExpressionList);
     }
 
     private LinkedList<String> removeUnnecessaryBrackets(LinkedList<String> tokenizedExpressionListToVerify){
@@ -94,13 +96,19 @@ public class MathExpression {
         // check if valid
         if(this.isValid()){
             //build ExpressionEvaluator Tree
+            System.out.println("\nParsing...");
             this.tokenizedExpressionTree = new BinaryTree<>(ExpressionParser.parse(this.tokenizedExpressionList));
+            System.out.print("Parsed with success --> ");
+            System.out.println(ExpressionParser.toStringExpressionTree(this.tokenizedExpressionTree.getRoot()));
 
             // Create an ExpressionEvaluator by specifying the notation
+            // Evaluate the expressionEvaluator from the Calculator engine
+            System.out.println("\nEvaluating...");
             ExpressionEvaluator expressionEvaluator = new ExpressionEvaluator(this.tokenizedExpressionTree, ExpressionEvaluator.INFIX);
 
-            // Evaluate the expressionEvaluator from the Calculator Builder
+
             this.result = expressionEvaluator.evaluate();
+            System.out.println("Evaluated with success : --> "+this.result);
         }
     }
 

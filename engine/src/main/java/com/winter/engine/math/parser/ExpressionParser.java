@@ -7,9 +7,15 @@ import java.util.ListIterator;
 
 public class ExpressionParser {
     private static final String UNARY_OPERATORS = "+-";
-    private static final String BINARY_OPERATORS = "+-*/";
+    private static final String BINARY_OPERATORS = "+-*/^";
 
     public static Node<String> parse(LinkedList<String> textExpressionList) {
+        System.out.println("Expression --> "+textExpressionList);
+        return parse(textExpressionList, 0);
+
+    }
+
+    public static Node<String> parse(LinkedList<String> textExpressionList, int level) {
 
         //root of the expression tree
         Node<String> root = new Node<>();
@@ -26,10 +32,14 @@ public class ExpressionParser {
             return root;
         }
 
+        //change level
+        level++ ;
+        String tabLevel = "\t";
+
         //look for the middle operator
         textExpressionList.removeFirst();
         textExpressionList.removeLast();
-        System.out.println("--> "+textExpressionList);
+        //System.out.println(tabLevel.repeat(level)+"Sub Expression --> "+textExpressionList);
         int index = getMiddleIndex(textExpressionList);
 
         //Create a node operator
@@ -37,13 +47,13 @@ public class ExpressionParser {
 
         //parse left side expression
         LinkedList leftExpression = new LinkedList<>(textExpressionList.subList(0,index));
-        System.out.println(leftExpression);
-        root.addLeft(parse(leftExpression));
+        System.out.println(tabLevel.repeat(level)+"left Expression --> "+leftExpression);
+        root.addLeft(parse(leftExpression, level));
 
         //parse right side expression
         LinkedList rightExpression = new LinkedList<>(textExpressionList.subList(index+1,textExpressionList.size()));
-        System.out.println(rightExpression);
-        root.addright(parse(rightExpression));
+        System.out.println(tabLevel.repeat(level)+"right Expression --> "+rightExpression);
+        root.addright(parse(rightExpression, level));
 
         //link the node and return it
         return root;
@@ -57,7 +67,7 @@ public class ExpressionParser {
         while (expListIterator.hasNext()){
             int index = expListIterator.nextIndex();
             token = expListIterator.next();
-            System.out.print(token+" ");
+            //System.out.print(token+" ");
             if ("(".contains(token)){
                 //System.out.print(token);
                 parenthesis.push(token);
