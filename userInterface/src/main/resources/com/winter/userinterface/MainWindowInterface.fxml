@@ -164,7 +164,7 @@
                   </Label>
                </children>
             </Pane>
-                <Pane fx:id="bntPow" layoutX="15.0" layoutY="235.0" onMouseClicked="#onSymbolClicked" prefHeight="80.0" prefWidth="95.0" styleClass="highlight" translateX="-4.0">
+                <Pane fx:id="btnPow" layoutX="15.0" layoutY="235.0" onMouseClicked="#onSymbolClicked" prefHeight="80.0" prefWidth="95.0" styleClass="highlight" translateX="-4.0">
                <children>
                   <Label layoutX="39.0" layoutY="19.0" text="^" textFill="WHITE">
                      <font>

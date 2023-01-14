@@ -47,7 +47,7 @@ public class MainWindowController {
 
     private void updateScreen(){
         if(this.resultInScreen){
-            System.out.print("nouvelle valeur");
+            System.out.println("> Expression Auto reset !");
             this.mathExpressionString = "";
             this.resultInScreen=false;
         }
@@ -58,6 +58,7 @@ public class MainWindowController {
         this.updateScreen();
 
         String symbol = ((Pane)event.getSource()).getId().replace("btn","");
+        //System.out.print(symbol+" ");
         if(symbol.equals("Equals")) {
             MathExpression mathExpression = new MathExpression(this.mathExpressionString);
             Double result = mathExpression.getResult();
@@ -69,7 +70,7 @@ public class MainWindowController {
         else if(symbol.equals("Clear")) {
             this.mathExpressionString ="";
             lblResult.setText(String.valueOf(0.0));
-            System.out.print("Nouvelle Expression");
+            System.out.println("> Expression reset !");
         }
         else if(symbol.equals("Dot")){
             this.mathExpressionString += ".";
@@ -86,11 +87,12 @@ public class MainWindowController {
         }
         else {
             switch (symbol) {
+                case "Pow" -> this.mathExpressionString +="^";
                 case "Plus" -> this.mathExpressionString += "+";
                 case "Minus" -> this.mathExpressionString += "-";
                 case "Multiply" -> this.mathExpressionString += "*";
                 case "Divide" -> this.mathExpressionString += "/";
-                case "Pow" -> this.mathExpressionString +="^";
+
             }
             lblResult.setText(mathExpressionString);
             //blink the pointer
