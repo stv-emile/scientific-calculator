@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10d2a7ca-30ca-48ba-9f87-aa2db2fd9a64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/engine/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine/src/main/java/com/winterproject/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine/src/test/java/com/winterproject/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/src/main/java/com/winter/engine/math/parser/ExpressionParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/com/winter/engine/math/parser/ExpressionParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/src/main/java/com/winter/engine/math/parser/MathExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/com/winter/engine/math/parser/MathExpression.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/target/classes/com/winter/engine/math/parser/ExpressionParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine/target/classes/com/winter/engine/math/parser/ExpressionParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/target/classes/com/winter/engine/math/parser/MathExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine/target/classes/com/winter/engine/math/parser/MathExpression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userInterface/src/main/java/com/winter/userinterface/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userInterface/src/main/java/com/winter/userinterface/MainWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userInterface/src/main/java/com/winterproject/userinterface/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userInterface/src/main/java/com/winterproject/userinterface/MainWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userInterface/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/userInterface/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userInterface/src/main/resources/com/winter/userinterface/MainWindowInterface.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/userInterface/src/main/resources/com/winter/userinterface/MainWindowInterface.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userInterface/src/main/resources/com/winter/userinterface/MainWindowStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/userInterface/src/main/resources/com/winter/userinterface/MainWindowStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +83,9 @@
       <workItem from="1672845637408" duration="794000" />
       <workItem from="1672853787883" duration="38772000" />
       <workItem from="1673437839799" duration="79343000" />
+      <workItem from="1673685714320" duration="624000" />
+      <workItem from="1673738513693" duration="5290000" />
+      <workItem from="1673888092940" duration="8345000" />
     </task>
     <servers />
   </component>

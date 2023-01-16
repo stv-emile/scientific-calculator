@@ -5,11 +5,16 @@
 
 .mainPane {
 
-    -fx-background-color: linear-gradient(to bottom right, #FF7F50, #6A5ACD);
+    -fx-background-color: linear-gradient(to bottom right, #c250ff, #5ac3cd);
     -fx-background-radius: 15 15 25 25;
 }
 
 .highlight {
     -fx-background-color: #00000025;
+    -fx-background-radius: 15;
+}
+
+.highlight:hover {
+    -fx-background-color: rgba(2, 53, 82, 0.15);
     -fx-background-radius: 15;
 }

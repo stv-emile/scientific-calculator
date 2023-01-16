@@ -24,7 +24,6 @@ public class ExpressionParser {
         if(textExpressionList.size()==0){
             return null;
         }
-
         //if it's a single node create a leaf node with the number as a value
         //and return it
         if(textExpressionList.size()==1){
